@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class atv07 {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        int a = 10;
+        int numeroadivinhado;
+        
+        do {
+            System.out.print("Adivinhe o número entre 1 e 20: ");
+            numeroadivinhado = scanner.nextInt();
+            
+            if (numeroadivinhado > a) {
+                System.out.println("Número maior que o valor sorteado");
+            }
+            if (numeroadivinhado < a) {
+                System.out.println("Número menor que o valor sorteado");
+            }
+        } while (numeroadivinhado != a);
+
+        System.out.println("Parabéns, você acertou!");
+        scanner.close();
+    }
+}
