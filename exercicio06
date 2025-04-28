@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class atv06 {
+  public static void main(String args[]) {
+    
+    Scanner scanner = new Scanner(System.in);
+    int escolha = 0;
+    do {
+        System.out.println("Adicionar");
+        System.out.println("Remover");
+        System.out.println("Sair");
+        
+        System.out.println("Escolha uma das opções:");
+
+        escolha = scanner.nextInt();
+        
+       if (escolha < 3) {
+				System.out.println("Ação executada");
+       }
+    } while (escolha < 3);
+
+    System.out.println("Loop encerrado");
+    scanner.close();
+  }
+}
