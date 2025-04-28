@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class atv03 {
+    public static void main(String[] args) {
+      
+    Scanner scanner = new Scanner(System.in);
+    String senha;
+    String senhaCorreta = "6561";
+    
+    while (true) {
+        System.out.println("Digite a senha: ");
+        senha = scanner.nextLine();
+    
+	  if(senha.equals(senhaCorreta)) {
+	 System.out.println("Acesso concedido");
+	 break;
+	 } else {
+	 System.out.println("Senha incorreta, tente novamente.");
+	 }
+        }
+        scanner.close();
+    }
+}
