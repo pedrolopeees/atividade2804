@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class atv08 {
+  public static void main(String args[]) {
+    
+    int nota;
+    int soma = 0;
+    int contador = 0;
+
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Insira uma nota de 0 a 10");
+   
+    do {
+    nota = scanner.nextInt();
+    if (nota >= 0) {
+    soma += nota;
+    contador++;
+    }
+    System.out.println("Deseja inserir outra nota?");
+   } while (nota <= 10);
+
+    scanner.close();
+   
+   int media = soma/contador;
+   System.out.println("Média: " + media);
+   
+  }
+}
