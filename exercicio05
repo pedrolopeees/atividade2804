@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class atv05 {
+  public static void main(String args[]) {
+    
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Digite um número entre 1 e 100");
+    int a = scanner.nextInt();
+    
+    do {
+    System.out.println(a);
+    } while (a > 100);
+    
+  }
+}
