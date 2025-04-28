@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class atv10 {
+  public static void main(String args[]) {
+
+    Scanner scanner = new Scanner(System.in);
+    long fatorial = 1;
+    int a = 1;
+
+    System.out.println("Digite um número inteiro positivo");
+    int b = scanner.nextInt();
+
+    
+    for(a = 1; a <= b; a++) {
+        fatorial = fatorial * a;
+    }
+    
+    System.out.println(b + "! = " + fatorial);
+    
+    }
+}
