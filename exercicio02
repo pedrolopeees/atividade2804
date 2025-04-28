@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class atv02 {
+    public static void main(String[] args) {
+      
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Digite um número:");
+    int a = scanner.nextInt();
+    
+    int soma = 0;
+    
+	while(a > 0) {
+	soma += a;
+	a = scanner.nextInt();
+	
+    }
+    
+    System.out.println("A soma é : " + soma);
+     
+    while(soma < 0); {
+
+    scanner.close();
+
+ }
+  
+  }
+}
